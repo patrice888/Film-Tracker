@@ -11,10 +11,12 @@ Dit is mijn Backend Eindproject van jaar 1: een interactieve website waarmee geb
 
 **Gebruikersaccount & Authenticatie**  
 - **Gebruiker registreren** – Nieuwe gebruikers kunnen een account aanmaken.  
+- **Admin rechten** – Admin alleen kan bijv media bewerken.  
 - **Inloggen** – Gebruikers kunnen inloggen met een wachtwoord.  
 - **Uitloggen** – Gebruikers kunnen uitloggen.  
 
 **Optionele Gebruikersinteracties**  
+- **Orderen** – Gebruikers kunnen een film liken (opgeslagen in database).  
 - **Films liken** – Gebruikers kunnen een film liken (opgeslagen in database).  
 - **Watchlist toevoegen** – Gebruikers kunnen films aan hun watchlist toevoegen.  
 - **Watchlist bekijken** – Gebruikers kunnen hun watchlist openen en films verwijderen.  

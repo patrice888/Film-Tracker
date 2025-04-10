@@ -47,10 +47,6 @@ h2 {
     color: #d3d3d3;
 }
 
-
-
-
-
 .detail-container {
     max-width: 600px;
     margin: 40px auto;
@@ -91,7 +87,7 @@ h2 {
 }
 
 .detail-container a:hover {
-    background-color: #b700ff;
+    background-color: #d06ff7;
 }
 
 
@@ -136,4 +132,25 @@ h2 {
 
 .navbar-links a:hover {
     color: #b700ff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="url"],
+.form-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-container button[type="submit"] {
+    background-color: #c07df7;
+    color: white;
+    padding: 12px 20px;
 }
