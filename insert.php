@@ -46,7 +46,7 @@ exit;
             <textarea name="review" id="review" required><?= ($film['review'] ?? '') ?></textarea>
 
             <label for="datum">Datum Bekeken👀</label>
-            <input type="number" name="datum" id="datum" value="<?= ($film['datum'] ?? '') ?>" required>
+            <input type="date" name="datum" id="datum" value="<?= ($film['datum'] ?? '') ?>" required>
 
             <label for="poster_url">Poster URL</label>
             <input type="url" name="poster_url" id="poster_url" value="<?= ($film['poster_url'] ?? '') ?>">

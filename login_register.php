@@ -2,7 +2,8 @@
 
 require_once 'db.php';
 
-function registerUser($pdo, $gebruikersnaam, $wachtwoord) {
+function registerUser($pdo, $gebruikersnaam, $wachtwoord)
+{
     $stmt = $pdo->prepare("SELECT gebruikersnaam FROM users WHERE gebruikersnaam = :gebruikersnaam");
     $stmt->execute([':gebruikersnaam' => $gebruikersnaam]);
     if ($stmt->fetch()) {
@@ -13,11 +14,12 @@ function registerUser($pdo, $gebruikersnaam, $wachtwoord) {
     if ($stmt->execute([':gebruikersnaam' => $gebruikersnaam, ':wachtwoord' => $hashed_wachtwoord])) {
         return "Registratie succesvol! Je kunt nu inloggen.";
     } else {
-        return "Er is een fout opgetreden bij de registratie.";
+        return "Er is een fout bij de registratie.";
     }
 }
 
-function loginUser($pdo, $gebruikersnaam, $wachtwoord) {
+function loginUser($pdo, $gebruikersnaam, $wachtwoord)
+{
     $stmt = $pdo->prepare("SELECT id, wachtwoord, rol FROM users WHERE gebruikersnaam = :gebruikersnaam");
     $stmt->execute([':gebruikersnaam' => $gebruikersnaam]);
     $user = $stmt->fetch();
@@ -43,12 +45,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <!DOCTYPE html>
 <html lang="nl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login & Registratie</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="detail-container">
         <?php if (isset($loginMessage)): ?>
@@ -84,4 +88,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </form>
     </div>
 </body>
+
 </html>
