@@ -16,8 +16,8 @@ Dit is mijn Backend Eindproject van jaar 1: een interactieve website waarmee geb
 - **Uitloggen** – Gebruikers kunnen uitloggen.  
 
 **Optionele Gebruikersinteracties**  
-- **Orderen** – Ordenen op rating hoogte.  
-- **Films liken** – Gebruikers kunnen een film liken (opgeslagen in database).  
+- **Orderen** – Ordenen op rating hoogte & datum.  
+- **Films liken** – Gebruikers kunnen een film liken en terug vinden op een liked_list lijst (opgeslagen in database).  
 - **Watchlist toevoegen** – Gebruikers kunnen films aan hun watchlist toevoegen.  
 - **Watchlist bekijken** – Gebruikers kunnen hun watchlist openen en films verwijderen.  
 - **Zoekfunctie** – Gebruikers kunnen films zoeken op titel of releasejaar.  
