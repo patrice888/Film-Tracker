@@ -48,4 +48,7 @@ Volg deze stappen om de Film Tracker lokaal te installeren en te gebruiken:
 * **Watchlist:** Ingelogde gebruikers kunnen mogelijk films aan hun watchlist toevoegen en hun watchlist bekijken en beheren.
 * **Zoeken:** Er kan een zoekbalk zijn waar gebruikers op titel of releasejaar kunnen zoeken.
 
+**Notitie:**
+Om als admin in te loggen gebruik het wachtwoord: 123
+
 Veel plezier met het verkennen van de Film Tracker!
