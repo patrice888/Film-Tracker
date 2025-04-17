@@ -23,7 +23,7 @@ $film = $stmt->fetch(PDO::FETCH_ASSOC);
 <body>
     <div class="detail-container">
         <h2><?= ($film['titel']) ?></h2>
-        <img src="<?= ($film['poster_url']) ?>" alt="<?= ($film['titel']) ?>" class="film-poster">
+        <img src="<?= ($film['poster_url']) ?>" class="film-poster">
         <p><strong>Review:</strong> <?= ($film['review']) ?> ✍️</p>
         <p><strong>Datum Bekeken :</strong> <?= ($film['datum'])?> 👀</p>
         <p><strong>Rating:</strong> <?= ($film['rating']) ?>⭐</p>

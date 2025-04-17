@@ -5,6 +5,7 @@ USE film_tracker;
 
 CREATE TABLE IF NOT EXISTS films (
     id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL DEFAULT 1,
     titel VARCHAR(255) NOT NULL,
     review TEXT,
     datum DATE,
@@ -38,4 +39,4 @@ INSERT INTO films (titel, review, datum, poster_url, rating) VALUES
 ('Pulp Fiction', 'Een serie met elkaar verweven misdaadzaken die zich afspelen in Los Angeles.', '2022-12-26', 'https://a.ltrbxd.com/resized/film-poster/5/1/4/4/4/51444-pulp-fiction-0-1000-0-1500-crop.jpg?v=dee19a8077', '8.9');
 
 INSERT INTO users (gebruikersnaam, wachtwoord, rol) VALUES
-('admin', '$2y$10$KIb6fqpa6aU3L1nSXk2fxOiaMa1FU9FBkT7T2EZAvuM0bA/dwXTHq', 'admin');
+('admin', '$2y$10$KIb6fqpa6aU3L1nSXk2fxOiaMa1FU9FBkT7T2EZAvuM0bA/dwXTHq', 'admin')

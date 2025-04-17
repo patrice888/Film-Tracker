@@ -3,17 +3,21 @@
 require_once 'db.php';
 require_once 'navbar.php';
 
+session_start();
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $titel = $_POST['titel'];
     $review = $_POST['review'];
     $datum = $_POST['datum'];
     $poster_url = $_POST['poster_url'];
     $rating = $_POST['rating'];
+    $user_id = $_SESSION['user_id'];
 
-$update = $pdo->prepare("INSERT INTO films (titel, review, datum, poster_url, rating) 
-VALUES (:titel, :review, :datum, :poster_url, :rating)");
+$stmt = $pdo->prepare("INSERT INTO films (user_id, titel, review, datum, poster_url, rating) 
+VALUES (:user_id, :titel, :review, :datum, :poster_url, :rating)");
 
-$update->execute([
+$stmt->execute([
+    ':user_id' => $user_id,
     ':titel' => $titel,
     ':review' => $review,
     ':datum' => $datum,
