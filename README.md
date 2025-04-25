@@ -52,3 +52,5 @@ Volg deze stappen om de Film Tracker lokaal te installeren en te gebruiken:
 Om als admin in te loggen gebruik het wachtwoord: 123
 
 Veel plezier met het verkennen van de Film Tracker!
+
+![image](https://github.com/user-attachments/assets/0eadd155-dd1e-4178-ba5d-773adb87bf21)
