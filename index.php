@@ -1,9 +1,14 @@
 <?php
 
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login_register.php");
+    exit;
+}
+
 require_once 'db.php';
 require_once 'navbar.php';
-
-session_start();
 
 $sortColumn = isset($_GET['sort']) ? $_GET['sort'] : 'titel';
 $sortOrder = isset($_GET['order']) ? $_GET['order'] : 'ASC';
